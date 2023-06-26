@@ -22,3 +22,7 @@ docker run --rm -it -u root -v ${pwd}:/source -v ${pwd}/Docs:/Docs -v ${pwd}/Dox
 
 After that one can for example check the dismounted directories with: 'ls' and go in the source directory to see if the Doxygen file is there:
 'ls', 'cd source', 'cat Doxygen'
+
+Or for example to create the header/footer/stylesheet templates:
+'cd Docs', 'cd Templates' and then: 'doxygen -w latex new_header.tex new_footer.tex new_stylesheet.sty'
+If you had previously created a Templates document than there will now three files in this folder containing header, footer and stylesheet templates
